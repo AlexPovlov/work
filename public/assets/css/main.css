@@ -1,0 +1,157 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 1;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+li,
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+span {
+  cursor: pointer;
+}
+
+P.blocktext {
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em
+}
+
+.conteiner {
+  width: 1000px auto;
+  margin: 0px 100px;
+}
+
+.header {
+  
+  background-color: rgb(180, 179, 189);
+  height: 50px;
+  width: auto;
+}
+
+.navigation {
+  height: 50px;
+  
+}
+
+.navbtm{
+  float: right;
+  position: relative;
+  padding-top:10px;
+  text-decoration: none;
+  padding-right: 10px;
+
+}
+
+.content{
+  margin-top: 10px;
+  height: 100%;
+}
+
+.sidebar{
+  float: left;
+  width: 400px;
+ 
+  
+}
+
+#elem {
+  
+  width: 50%;
+  float: right;
+}
+
+.login{ 
+  position: relative;
+  width: 300px;
+  margin-top: 150px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+ 
+}
+
+.formelem{
+  top: 50%;
+  left: 30%;
+  flex-wrap: wrap-reverse;;
+  display: inline-block;
+
+  
+}
+
+
+
+
